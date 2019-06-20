@@ -222,9 +222,9 @@ body {
   top: 0;
   z-index: $zindex-13--loading-layer;
 
-  &__icon {
+/*  &__icon {
     width: 70px;
-  }
+  }*/
 
   &__heading {
     max-width: 280px;
@@ -372,7 +372,7 @@ body {
     width: 280px;
 
     @include bp(s) {
-      width: 580px;
+      width: 280px;
     }
 
     @include bp(ls) {
