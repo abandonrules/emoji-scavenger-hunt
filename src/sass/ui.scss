@@ -364,6 +364,14 @@ body {
     left: 6px;
   }
 
+  &__links {
+    padding:10px 0;
+    
+    a{
+      color:#fff;
+    }
+  }
+
   h1 {
     margin: 0;
   }
