@@ -147,7 +147,6 @@ export class Game {
     let matches = window.location.href.match(/([^/]+)\.html$/);
     let page = (matches && matches[1].toUpperCase()) || 'OFFICE';
     this.emojis = EMOJIS[page];
-    this.emojis = 
     this.emojiLvl1 = shuffle(this.emojis.EMOJIS_LVL_1);
     this.emojiLvl2 = shuffle(this.emojis.EMOJIS_LVL_2);
     this.emojiLvl3 = shuffle(this.emojis.EMOJIS_LVL_3);

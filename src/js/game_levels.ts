@@ -49,7 +49,7 @@ export const EMOJIS_LVL_DEMO: Array<EmojiItem> = [
     'path': '/img/emojis/game/jack o lantern.svg'
   }
 ];
-export const EMOJIS = {
+export const EMOJIS: any = {
   OFFICE:{
     EMOJIS_LVL_1:[
   {
