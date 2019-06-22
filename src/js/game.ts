@@ -163,7 +163,7 @@ export class Game {
       '#': this.emojiLvlDemo
     };
 
-    this.gameDifficulty = '1121222345';
+    this.gameDifficulty = '1121345';
     this.currentLvlIndex = 0;
 
     this.audioSources = {
