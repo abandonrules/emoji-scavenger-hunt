@@ -144,16 +144,9 @@ export class Game {
       'googleVoice': null,
       'activeVoice': null
     };
-    const url = window.location.href;
-    if(url.indexOf('office') > -1){
-      this.emojis = EMOJIS.OFFICE;
-    }
-    else if(url.indexOf('home') > -1){
-      this.emojis = EMOJIS.HOME;
-    }
-    else{
-      this.emojis = EMOJIS.OFFICE;
-    }
+    let matches = window.location.href.match(/([^/]+)\.html$/);
+    let page = (matches && matches[1].toUpperCase()) || 'OFFICE';
+    this.emojis = EMOJIS[page];
     this.emojis = 
     this.emojiLvl1 = shuffle(this.emojis.EMOJIS_LVL_1);
     this.emojiLvl2 = shuffle(this.emojis.EMOJIS_LVL_2);
